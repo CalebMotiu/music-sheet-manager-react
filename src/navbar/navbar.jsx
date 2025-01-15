@@ -4,9 +4,11 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <h1>Music sheets manager</h1>
-           <Link to="/">Home</Link>
-           <Link to="/sheets">Sheets</Link>
-
+            <div className="links">
+                <Link to="/">Home</Link>
+                <Link to="/sheets">Sheets</Link>
+                <Link to="/create">Create</Link>
+            </div>
         </nav>
     );
 }
