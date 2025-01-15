@@ -10,19 +10,23 @@ const Create = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!title || !body || !author) {
+        alert('Please fill in all fields');
+        return;
+    }
     const blog = { title, body, author };
-
     setIsPending(true);
 
-    fetch('http://localhost:8000/sheets',{
+    fetch('http://localhost:8000/sheets', {
         method: 'POST',
-        headers: { "Content-Type": "application/json"},
-        body: JSON.stringify(blog)
-    }). then(() => {
-        console.log("new blog added");
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(blog),
+    }).then(() => {
+        console.log('new blog added');
         setIsPending(false);
-    })
-  }
+        navigate('/sheets');
+    });
+};
 
   return (
     <div className="create">
