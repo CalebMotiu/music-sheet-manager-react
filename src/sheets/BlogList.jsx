@@ -10,8 +10,9 @@ const BlogList = ({ blogs, title  }) => {
         {blogs.map((blog) => (
             <div className="sheets-preview" key={blog.id}>
                 <Link to={`/sheets/${blog.id}`}>
-                <h2>{ blog.title }</h2>
-                <p>Written by { blog.author }</p>
+                <h2>{blog.title}</h2>
+                <p>Written by {blog.author}</p>
+                <p>Category: {blog.category}</p>
                 </Link>
             </div>
         ))}

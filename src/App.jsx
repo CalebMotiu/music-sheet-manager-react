@@ -5,6 +5,8 @@ import Home from './home/home';
 import Sheets from './sheets/sheets';
 import BlogDetails from './sheets/BlogDetails';
 import Create from './sheets/Create';
+import Login from './login/Login';
+import Register from './login/Register';
 
 function App() {
   return (
@@ -17,7 +19,8 @@ function App() {
             <Route path={"/sheets"} element={<Sheets />}></Route>
             <Route path={"/create"} element={<Create />}></Route>
             <Route  path={"/sheets/:id"} element={<BlogDetails  />}></Route>
-
+            {/* <Route path={"/login"} element={<Login/>}></Route>
+            <Route path={"/register"} element={<Register/>}></Route> */}
           </Routes>
         </div>
       </div>

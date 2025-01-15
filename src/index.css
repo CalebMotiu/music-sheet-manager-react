@@ -125,3 +125,34 @@
   color: #888;
   font-style: italic;
 }
+/* Style for the category filter dropdown */
+.category-filter {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 200px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+
+/* Change background color on hover */
+.category-filter:hover {
+  background-color: #e0e0e0;
+}
+
+/* Focus style for the category filter */
+.category-filter:focus {
+  border-color: #f1356d;
+  outline: none;
+  background-color: #fff;
+}
+
+/* Add a little margin between the dropdown and other elements */
+.sheets {
+  margin-bottom: 20px;
+}
+
+
